@@ -1,8 +1,8 @@
 {
   "$schema": "https://github.com/grafana/grafana/raw/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "datasource",
-  "name": "JSON API",
-  "id": "marcusolsson-json-datasource",
+  "name": "JSON Variables API",
+  "id": "maishiro-json-datasource",
   "metrics": true,
   "logs": true,
   "annotations": true,
