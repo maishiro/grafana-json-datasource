@@ -176,7 +176,9 @@ export class JsonDataSource extends DataSourceApi<JsonApiQuery, JsonApiDataSourc
               config: {},
             };
           default:
-            const path = replaceWithVars(field.jsonPath);
+            // const path = replaceWithVars(field.jsonPath);
+            const path1 = replaceWithVars(field.jsonPath);
+            const path = getTemplateSrv().replace(path1, scopedVars);
             const values = jp({ path, json });
 
             // Get the path for automatic setting of the field name.
