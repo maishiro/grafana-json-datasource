@@ -48,10 +48,10 @@ export async function getEntries(): Promise<Record<string, string>> {
   let plugins = [];
   if( Array.isArray(pluginsJson) ) {
     plugins = await Promise.all(pluginsJson.map((pluginJson) => {
-        const folder = path.dirname(pluginJson);
-        return glob(`${folder}/module.{ts,tsx,js,jsx}`, { absolute: true });
-      })
-    );
+      const folder = path.dirname(pluginJson);
+      return glob(`${folder}/module.{ts,tsx,js,jsx}`, { absolute: true });
+    })
+  );
   }
 
   return plugins.reduce((result, modules) => {

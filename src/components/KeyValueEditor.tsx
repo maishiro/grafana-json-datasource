@@ -6,10 +6,10 @@ import { Pair } from '../types';
 
 interface Props {
   columns: string[];
-  values: Array<Pair<string, string>>;
+  values: Pair<string, string>[];
   addRowLabel: string;
 
-  onChange: (rows: Array<Pair<string, string>>) => void;
+  onChange: (rows: Pair<string, string>[]) => void;
   onBlur: () => void;
 }
 

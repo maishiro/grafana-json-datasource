@@ -16,8 +16,8 @@ export interface JsonApiQuery extends DataQuery {
   method: string;
   urlPath: string;
   queryParams: string;
-  params: Array<Pair<string, string>>;
-  headers: Array<Pair<string, string>>;
+  params: Pair<string, string>[];
+  headers: Pair<string, string>[];
   body: string;
   cacheDurationSeconds: number;
 

@@ -37,12 +37,12 @@ export const TabbedQueryEditor = ({ query, onChange, onRunQuery, fieldsTab, expe
     onRunQuery();
   };
 
-  const onParamsChange = (params: Array<Pair<string, string>>) => {
+  const onParamsChange = (params: Pair<string, string>[]) => {
     onChange({ ...q, params });
     onRunQuery();
   };
 
-  const onHeadersChange = (headers: Array<Pair<string, string>>) => {
+  const onHeadersChange = (headers: Pair<string, string>[]) => {
     onChange({ ...q, headers });
     onRunQuery();
   };

@@ -21,8 +21,8 @@ export default class Api {
   async get(
     method: string,
     path: string,
-    params?: Array<Pair<string, string>>,
-    headers?: Array<Pair<string, string>>,
+    params?: Pair<string, string>[],
+    headers?: Pair<string, string>[],
     body?: string
   ): Promise<any> {
     const paramsData: Record<string, string> = {};
@@ -66,8 +66,8 @@ export default class Api {
     cacheDurationSeconds: number,
     method: string,
     path: string,
-    params: Array<Pair<string, string>>,
-    headers?: Array<Pair<string, string>>,
+    params: Pair<string, string>[],
+    headers?: Pair<string, string>[],
     body?: string
   ): Promise<any> {
     if (!cacheDurationSeconds) {
@@ -111,7 +111,7 @@ export default class Api {
     method: string,
     path: string,
     params?: Record<string, string>,
-    headers?: Array<Pair<string, string>>,
+    headers?: Pair<string, string>[],
     data?: string
   ): Observable<any> {
     const recordHeaders: Record<string, any> = {};
