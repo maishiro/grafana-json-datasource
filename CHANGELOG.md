@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3.16 - 2024-06-13
+
+- ⚙️ **Fix**: Consider `\` (backslash) characters in allowed url checks.
+
+## v1.3.15 - 2024-05-14
+
+- ⚙️ **Chore**: Updated documentation
+
 ## v1.3.14 - 2024-04-15
 
 - ⚙️ **Chore**: Update dependencies
